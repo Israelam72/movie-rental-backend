@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Movie, Rental
+from .models import Movie
 
 # Register your models here.
 
@@ -10,11 +10,3 @@ class MovieAdmin(admin.ModelAdmin):
     list_filter = ('genre', 'director')
     search_fields = ('title', 'director')
     list_per_page = 10
-
-
-@admin.register(Rental)
-class RentalAdmin(admin.ModelAdmin):
-    list_display = ('customer', 'movie', 'rental_date', 'return_date')
-    list_filter = ('customer', 'movie')
-    search_fields = ('customer__username', 'movie__title')
-    date_hierarchy = 'rental_date'
