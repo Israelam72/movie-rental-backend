@@ -49,7 +49,7 @@ env/
 Thumbs.db
 
 # Project specific
-movie_rental.session.sql
+rentamovie.session.sql
 pyrightconfig.json 
 
 # Docker
