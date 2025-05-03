@@ -14,6 +14,7 @@ class Rental(models.Model):
     rental_date: models.DateTimeField = models.DateTimeField(auto_now_add=True)
     return_date: models.DateTimeField = models.DateTimeField(
         auto_now_add=True, null=True, blank=True)
+    is_returned: models.BooleanField = models.BooleanField(default=False)
 
     def is_available(self) -> bool:
         return not Rental.objects.filter(movie=self, return_date__isnull=True).exists()
