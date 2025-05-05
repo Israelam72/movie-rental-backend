@@ -63,3 +63,6 @@ pyrightconfig.json
 
 # Pylint
 .pylint.d/
+
+# Makefile
+Makefile
