@@ -13,3 +13,10 @@ def get_movies(request):
     movies = Movie.objects.all()
     serializer = MovieSerializer(movies, many=True)
     return Response(serializer.data)
+
+
+@api_view(['GET'])
+def get_home_movies(request):
+    movies = Movie.objects.all()[:4]
+    serializer = MovieSerializer(movies, many=True)
+    return Response(serializer.data)
