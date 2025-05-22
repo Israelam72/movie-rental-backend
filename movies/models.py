@@ -9,3 +9,5 @@ class Movie(models.Model):
     release_year: models.IntegerField = models.IntegerField()
     synopsis: models.TextField = models.TextField()
     rating: models.FloatField = models.FloatField()
+    image_url: models.URLField = models.URLField(
+        max_length=200, null=True, blank=True)
