@@ -24,9 +24,6 @@
       "always",
       100
     ],
-    "header-case": [
-      0
-    ],
     "body-max-line-length": [
       2,
       "always",
