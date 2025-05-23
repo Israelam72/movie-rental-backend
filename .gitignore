@@ -66,3 +66,6 @@ pyrightconfig.json
 
 # Makefile
 Makefile
+
+# Node
+node_modules/

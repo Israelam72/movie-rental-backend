@@ -1,0 +1,13 @@
+{
+  "name": "movie-rental-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Israelam72/movie-rental-backend.git",
+  "author": "Israelam72 <israelarantes.m@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "husky": "^9.1.7"
+  }
+}
